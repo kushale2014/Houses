@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>7z-32/7z.dll</file>
+        <file>7z-32/7z.exe</file>
+        <file>7z-64/7z.dll</file>
+        <file>7z-64/7z.exe</file>
+        <file>ico/0591.ico</file>
+        <file>ico/0594.ico</file>
+        <file>ico/1304.ico</file>
+        <file>ico/1306.ico</file>
+        <file>ico/0234.ico</file>
+        <file>ico/1177.ico</file>
+        <file>ico/0642.ico</file>
+    </qresource>
+</RCC>

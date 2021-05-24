@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>776</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Поштові індекси</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="updateFromFile_PB">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Оновити індекси
+ із файлу</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/ico/1177.ico</normaloff>:/ico/1177.ico</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QLabel" name="vertical_LB">
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>20</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QToolButton" name="toolButton">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>x</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Область</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="area_LE">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QToolButton" name="toolButton_2">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>x</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Район</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="region_LE">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QToolButton" name="toolButton_3">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>x</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Насел.пункт</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="place_LE">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QToolButton" name="toolButton_4">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>x</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Індекс</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="index_LE">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QToolButton" name="toolButton_5">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>x</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Вулиця</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="street_LE">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QToolButton" name="toolButton_6">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>x</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Номера</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="nomer_LE">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="filterClear_PB">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">padding: 5px;</string>
+         </property>
+         <property name="text">
+          <string>Очистити 
+всі фільтри</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/ico/0642.ico</normaloff>:/ico/0642.ico</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QToolButton" name="up_TB">
+         <property name="toolTip">
+          <string>На початок таблиці</string>
+         </property>
+         <property name="text">
+          <string>Вверх</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/ico/1304.ico</normaloff>:/ico/1304.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="down_TB">
+         <property name="toolTip">
+          <string>У кінець таблиці</string>
+         </property>
+         <property name="text">
+          <string>Вниз</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/ico/0591.ico</normaloff>:/ico/0591.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Alt+Shift+К</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QTableView" name="tableView">
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QTextEdit" name="textEdit">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>197</red>
+            <green>187</green>
+            <blue>200</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>197</red>
+            <green>187</green>
+            <blue>200</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>240</red>
+            <green>240</green>
+            <blue>240</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>toolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>area_LE</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>108</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>region_LE</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>180</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>place_LE</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>index_LE</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>318</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>street_LE</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>438</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>nomer_LE</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
